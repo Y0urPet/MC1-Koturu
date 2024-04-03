@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2B9AF9E72BBB3823000DBD2D /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9AF9E62BBB3823000DBD2D /* MainTabView.swift */; };
 		2B9AF9EB2BBB55D1000DBD2D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B9AF9EA2BBB55D1000DBD2D /* Launch Screen.storyboard */; };
+		2BA952F62BBBCE2F008AC955 /* InputCaffeineForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA952F52BBBCE2F008AC955 /* InputCaffeineForm.swift */; };
 		2BB314E02BBAFD62004E7C63 /* MC1_KoturuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB314DF2BBAFD62004E7C63 /* MC1_KoturuApp.swift */; };
 		2BB314E22BBAFD62004E7C63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB314E12BBAFD62004E7C63 /* ContentView.swift */; };
 		2BB314E62BBAFD64004E7C63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BB314E52BBAFD64004E7C63 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		2B9AF9E62BBB3823000DBD2D /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		2B9AF9EA2BBB55D1000DBD2D /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		2BA952F52BBBCE2F008AC955 /* InputCaffeineForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCaffeineForm.swift; sourceTree = "<group>"; };
 		2BB314DC2BBAFD62004E7C63 /* MC1-Koturu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MC1-Koturu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB314DF2BBAFD62004E7C63 /* MC1_KoturuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MC1_KoturuApp.swift; sourceTree = "<group>"; };
 		2BB314E12BBAFD62004E7C63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				2B9AF9E62BBB3823000DBD2D /* MainTabView.swift */,
 				2BB3150D2BBAFEBA004E7C63 /* HomePage.swift */,
 				2BB3150F2BBB31A4004E7C63 /* SleepPage.swift */,
+				2BA952F52BBBCE2F008AC955 /* InputCaffeineForm.swift */,
 				2BB315112BBB31B0004E7C63 /* ProfilePage.swift */,
 				2B9AF9EA2BBB55D1000DBD2D /* Launch Screen.storyboard */,
 				2BB315132BBB31BE004E7C63 /* CatalogPage.swift */,
@@ -286,6 +289,7 @@
 				2BB314E02BBAFD62004E7C63 /* MC1_KoturuApp.swift in Sources */,
 				2BB315102BBB31A4004E7C63 /* SleepPage.swift in Sources */,
 				2BB3150E2BBAFEBA004E7C63 /* HomePage.swift in Sources */,
+				2BA952F62BBBCE2F008AC955 /* InputCaffeineForm.swift in Sources */,
 				2BB315142BBB31BE004E7C63 /* CatalogPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
