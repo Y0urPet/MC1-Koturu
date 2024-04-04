@@ -7,21 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B9AF9E72BBB3823000DBD2D /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B9AF9E62BBB3823000DBD2D /* MainTabView.swift */; };
 		2B9AF9EB2BBB55D1000DBD2D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B9AF9EA2BBB55D1000DBD2D /* Launch Screen.storyboard */; };
 		2BA952F62BBBCE2F008AC955 /* InputCaffeineForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA952F52BBBCE2F008AC955 /* InputCaffeineForm.swift */; };
+		2BA9533A2BBDC95F008AC955 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BA953392BBDC95F008AC955 /* Assets.xcassets */; };
+		2BA9533E2BBE0045008AC955 /* CatalogPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA9533D2BBE0045008AC955 /* CatalogPage.swift */; };
+		2BA953402BBE10B2008AC955 /* SettingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA9533F2BBE10B2008AC955 /* SettingPage.swift */; };
+		2BA953422BBE1C05008AC955 /* SleepPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA953412BBE1C05008AC955 /* SleepPage.swift */; };
 		2BB314E02BBAFD62004E7C63 /* MC1_KoturuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB314DF2BBAFD62004E7C63 /* MC1_KoturuApp.swift */; };
 		2BB314E22BBAFD62004E7C63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB314E12BBAFD62004E7C63 /* ContentView.swift */; };
-		2BB314E62BBAFD64004E7C63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BB314E52BBAFD64004E7C63 /* Assets.xcassets */; };
 		2BB314E92BBAFD64004E7C63 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BB314E82BBAFD64004E7C63 /* Preview Assets.xcassets */; };
 		2BB314F32BBAFD64004E7C63 /* MC1_KoturuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB314F22BBAFD64004E7C63 /* MC1_KoturuTests.swift */; };
 		2BB314FD2BBAFD64004E7C63 /* MC1_KoturuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB314FC2BBAFD64004E7C63 /* MC1_KoturuUITests.swift */; };
 		2BB314FF2BBAFD64004E7C63 /* MC1_KoturuUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB314FE2BBAFD64004E7C63 /* MC1_KoturuUITestsLaunchTests.swift */; };
-		2BB3150C2BBAFE91004E7C63 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB3150B2BBAFE91004E7C63 /* SplashScreen.swift */; };
 		2BB3150E2BBAFEBA004E7C63 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB3150D2BBAFEBA004E7C63 /* HomePage.swift */; };
-		2BB315102BBB31A4004E7C63 /* SleepPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB3150F2BBB31A4004E7C63 /* SleepPage.swift */; };
-		2BB315122BBB31B0004E7C63 /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB315112BBB31B0004E7C63 /* ProfilePage.swift */; };
-		2BB315142BBB31BE004E7C63 /* CatalogPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB315132BBB31BE004E7C63 /* CatalogPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,24 +40,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2B9AF9E62BBB3823000DBD2D /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		2B9AF9EA2BBB55D1000DBD2D /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		2BA952F52BBBCE2F008AC955 /* InputCaffeineForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCaffeineForm.swift; sourceTree = "<group>"; };
+		2BA953392BBDC95F008AC955 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2BA9533D2BBE0045008AC955 /* CatalogPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogPage.swift; sourceTree = "<group>"; };
+		2BA9533F2BBE10B2008AC955 /* SettingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingPage.swift; sourceTree = "<group>"; };
+		2BA953412BBE1C05008AC955 /* SleepPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepPage.swift; sourceTree = "<group>"; };
 		2BB314DC2BBAFD62004E7C63 /* MC1-Koturu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MC1-Koturu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB314DF2BBAFD62004E7C63 /* MC1_KoturuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MC1_KoturuApp.swift; sourceTree = "<group>"; };
 		2BB314E12BBAFD62004E7C63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		2BB314E52BBAFD64004E7C63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BB314E82BBAFD64004E7C63 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2BB314EE2BBAFD64004E7C63 /* MC1-KoturuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MC1-KoturuTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB314F22BBAFD64004E7C63 /* MC1_KoturuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MC1_KoturuTests.swift; sourceTree = "<group>"; };
 		2BB314F82BBAFD64004E7C63 /* MC1-KoturuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MC1-KoturuUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB314FC2BBAFD64004E7C63 /* MC1_KoturuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MC1_KoturuUITests.swift; sourceTree = "<group>"; };
 		2BB314FE2BBAFD64004E7C63 /* MC1_KoturuUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MC1_KoturuUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		2BB3150B2BBAFE91004E7C63 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		2BB3150D2BBAFEBA004E7C63 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
-		2BB3150F2BBB31A4004E7C63 /* SleepPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepPage.swift; sourceTree = "<group>"; };
-		2BB315112BBB31B0004E7C63 /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
-		2BB315132BBB31BE004E7C63 /* CatalogPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,15 +108,13 @@
 			children = (
 				2BB314DF2BBAFD62004E7C63 /* MC1_KoturuApp.swift */,
 				2BB314E12BBAFD62004E7C63 /* ContentView.swift */,
-				2BB3150B2BBAFE91004E7C63 /* SplashScreen.swift */,
-				2B9AF9E62BBB3823000DBD2D /* MainTabView.swift */,
+				2BA9533D2BBE0045008AC955 /* CatalogPage.swift */,
+				2BA953412BBE1C05008AC955 /* SleepPage.swift */,
 				2BB3150D2BBAFEBA004E7C63 /* HomePage.swift */,
-				2BB3150F2BBB31A4004E7C63 /* SleepPage.swift */,
+				2BA9533F2BBE10B2008AC955 /* SettingPage.swift */,
 				2BA952F52BBBCE2F008AC955 /* InputCaffeineForm.swift */,
-				2BB315112BBB31B0004E7C63 /* ProfilePage.swift */,
 				2B9AF9EA2BBB55D1000DBD2D /* Launch Screen.storyboard */,
-				2BB315132BBB31BE004E7C63 /* CatalogPage.swift */,
-				2BB314E52BBAFD64004E7C63 /* Assets.xcassets */,
+				2BA953392BBDC95F008AC955 /* Assets.xcassets */,
 				2BB314E72BBAFD64004E7C63 /* Preview Content */,
 			);
 			path = "MC1-Koturu";
@@ -256,8 +250,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B9AF9EB2BBB55D1000DBD2D /* Launch Screen.storyboard in Resources */,
+				2BA9533A2BBDC95F008AC955 /* Assets.xcassets in Resources */,
 				2BB314E92BBAFD64004E7C63 /* Preview Assets.xcassets in Resources */,
-				2BB314E62BBAFD64004E7C63 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,15 +276,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BB315122BBB31B0004E7C63 /* ProfilePage.swift in Sources */,
-				2BB3150C2BBAFE91004E7C63 /* SplashScreen.swift in Sources */,
 				2BB314E22BBAFD62004E7C63 /* ContentView.swift in Sources */,
-				2B9AF9E72BBB3823000DBD2D /* MainTabView.swift in Sources */,
 				2BB314E02BBAFD62004E7C63 /* MC1_KoturuApp.swift in Sources */,
-				2BB315102BBB31A4004E7C63 /* SleepPage.swift in Sources */,
 				2BB3150E2BBAFEBA004E7C63 /* HomePage.swift in Sources */,
 				2BA952F62BBBCE2F008AC955 /* InputCaffeineForm.swift in Sources */,
-				2BB315142BBB31BE004E7C63 /* CatalogPage.swift in Sources */,
+				2BA953422BBE1C05008AC955 /* SleepPage.swift in Sources */,
+				2BA9533E2BBE0045008AC955 /* CatalogPage.swift in Sources */,
+				2BA953402BBE10B2008AC955 /* SettingPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
