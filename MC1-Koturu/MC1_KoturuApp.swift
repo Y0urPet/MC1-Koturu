@@ -10,7 +10,13 @@ import SwiftData
 
 @main
 struct MC1_KoturuApp: App {
-
+    init() {
+        // Copy File From Directory Resources Into Local Documents App
+        copyFileToDocumentsDirectory(fileName: filePersonalized)
+        copyFileToDocumentsDirectory(fileName: fileDailySleeps)
+        copyFileToDocumentsDirectory(fileName: fileDefaultBaverages)
+        copyFileToDocumentsDirectory(fileName: fileCustomBaverages)
+    }
     var body: some Scene {
         WindowGroup {
             ContentView()

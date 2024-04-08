@@ -9,15 +9,20 @@ import SwiftUI
 import Charts
 
 struct SleepPage: View {
-    var data: [dailySleepCount] = [
-        .init(type: "Senin", count: 1),
-        .init(type: "Selasa", count:1),
-        .init(type: "Rabu", count: 1),
-        .init(type: "Kamis", count: 1),
-        .init(type: "Jumat", count: 1),
-        .init(type: "Sabtu", count: 1),
-        .init(type: "Minggu", count: 5),
-    ]
+    @Binding private var dailySleep: [DailySleep]
+    
+    init(data: Binding<[DailySleep]>) {
+        _dailySleep = data
+    }
+    
+    private func calculateSleepPoint(data: [DailySleep]) -> Int {
+        var count: Int = 0
+        for temp in data {
+            count += temp.point
+        }
+        return count
+    }
+
     
     var body: some View {
         NavigationView {
@@ -48,10 +53,10 @@ struct SleepPage: View {
                                     }
                                 }
                                 HStack(spacing:20) {
-                                    Chart(data) { data in
+                                    Chart(dailySleep) {sleep in
                                         BarMark(
-                                            x: .value("Shape Type", data.type),
-                                            y: .value("Total Count", data.count),
+                                            x: .value("Shape Type", sleep.day),
+                                            y: .value("Total Count", sleep.point),
                                             width: .fixed(16)
                                         )
                                         .clipShape(RoundedRectangle(cornerRadius: 20))
@@ -61,8 +66,35 @@ struct SleepPage: View {
                                     .frame(width: 180,height: 100)
                                     .chartScrollableAxes(.horizontal)
                                     .chartXVisibleDomain(length: Int(UIScreen.main.bounds.width / 50))
-                                .chartYAxis(.hidden)
-                                    Image("bxs_smile").resizable().frame(width: 82, height: 82)
+                                    .chartYAxis(.hidden)
+                                    
+                                    switch calculateSleepPoint(data: dailySleep) {
+                                    case 1..<35:
+                                        Image(systemName: "battery.25percent")
+                                            .resizable()
+                                            .frame(width: 60, height: 30)
+                                            .foregroundColor(.cupcolor)
+                                    case 35:
+                                        Image(systemName: "battery.50percent")
+                                            .resizable()
+                                            .frame(width: 60, height: 30)
+                                            .foregroundColor(.cupcolor)
+                                    case 42...56:
+                                        Image(systemName: "battery.75percent")
+                                            .resizable()
+                                            .frame(width: 60, height: 30)
+                                            .foregroundColor(.cupcolor)
+                                    case 63...70:
+                                        Image(systemName: "battery.100percent")
+                                            .resizable()
+                                            .frame(width: 60, height: 30)
+                                            .foregroundColor(.cupcolor)
+                                    default:
+                                        Image(systemName: "battery.0percent")
+                                            .resizable()
+                                            .frame(width: 60, height: 30)
+                                            .foregroundColor(.cupcolor)
+                                    }
                                 }
                             }
                             Image(systemName:"chevron.right").resizable().frame(width: 7.2, height: 12).foregroundStyle(.prime)
@@ -121,12 +153,6 @@ struct SleepPage: View {
     }
 }
 
-struct dailySleepCount: Identifiable {
-    var type: String
-    var count: Double
-    var id = UUID()
-}
-
 #Preview {
-    SleepPage()
+    SleepPage(data: getDailySleepsData())
 }

@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "name": "Americano",
+        "imageName": "customDrink"
+    },
+    {
+        "id": 2,
+        "name": "Espresso",
+        "imageName": "customDrink"
+    },
+    {
+        "id": 3,
+        "name": "Capucino",
+        "imageName": "customDrink"
+    }
+]

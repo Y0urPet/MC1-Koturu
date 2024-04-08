@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "name": "Kopi Kapal Api",
+        "imageName": "customDrink",
+        "varians": [
+            {
+                "id": 11,
+                "name": "Special",
+                "caffeine": 30
+            },
+            {
+                "id": 12,
+                "name": "Mantap",
+                "caffeine": 30
+            },
+            {
+                "id": 13,
+                "name": "Special Mantap",
+                "caffeine": 30
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "GoodDay Freeze",
+        "imageName": "customDrink",
+        "varians": [
+            {
+                "id": 21,
+                "name": "Special",
+                "caffeine": 30
+            },
+            {
+                "id": 22,
+                "name": "Mantap",
+                "caffeine": 30
+            },
+            {
+                "id": 23,
+                "name": "Special Mantap",
+                "caffeine": 30
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "NestCaffee",
+        "imageName": "customDrink",
+        "varians": [
+            {
+                "id": 31,
+                "name": "Special",
+                "caffeine": 30
+            },
+            {
+                "id": 32,
+                "name": "Mantap",
+                "caffeine": 30
+            },
+            {
+                "id": 33,
+                "name": "Special Mantap",
+                "caffeine": 30
+            }
+        ]
+    }
+]

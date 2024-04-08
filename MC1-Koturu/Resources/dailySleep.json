@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "day": "Senin",
+        "point": 4
+    },
+    {
+        "id": 2,
+        "day": "Selasa",
+        "point": 1
+    },
+    {
+        "id": 3,
+        "day": "Rabu",
+        "point": 10
+    },
+    {
+        "id": 4,
+        "day": "Kamis",
+        "point": 3
+    },
+    {
+        "id": 5,
+        "day": "Jumat",
+        "point": 4
+    },
+    {
+        "id": 6,
+        "day": "Sabtu",
+        "point": 5
+    },
+    {
+        "id": 7,
+        "day": "Minggu",
+        "point": 8
+    },
+
+]
