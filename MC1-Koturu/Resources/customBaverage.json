@@ -2,16 +2,37 @@
     {
         "id": 1,
         "name": "Americano",
-        "imageName": "customDrink"
+        "imageName": "customDrink",
+        "caffeine": 70
     },
     {
         "id": 2,
         "name": "Espresso",
-        "imageName": "customDrink"
+        "imageName": "customDrink",
+        "caffeine": 80
     },
     {
         "id": 3,
         "name": "Capucino",
-        "imageName": "customDrink"
+        "imageName": "customDrink",
+        "caffeine": 90
+    },
+    {
+        "id": 4,
+        "name": "Latte",
+        "imageName": "customDrink",
+        "caffeine": 30
+    },
+    {
+        "id": 5,
+        "name": "Chocolate",
+        "imageName": "customDrink",
+        "caffeine": 40
+    },
+    {
+        "id": 6,
+        "name": "Long Black",
+        "imageName": "customDrink",
+        "caffeine": 95
     }
 ]

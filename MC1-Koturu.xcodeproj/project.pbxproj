@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2B9AF9EB2BBB55D1000DBD2D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B9AF9EA2BBB55D1000DBD2D /* Launch Screen.storyboard */; };
-		2BA952F62BBBCE2F008AC955 /* InputCaffeineForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA952F52BBBCE2F008AC955 /* InputCaffeineForm.swift */; };
 		2BA9533A2BBDC95F008AC955 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BA953392BBDC95F008AC955 /* Assets.xcassets */; };
 		2BA9533E2BBE0045008AC955 /* CatalogPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA9533D2BBE0045008AC955 /* CatalogPage.swift */; };
 		2BA953402BBE10B2008AC955 /* SettingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA9533F2BBE10B2008AC955 /* SettingPage.swift */; };
@@ -28,6 +27,10 @@
 		8B5FE59D2BC2B2020061EE8C /* Personalized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5FE59C2BC2B2020061EE8C /* Personalized.swift */; };
 		8B5FE5A12BC31CB90061EE8C /* dailySleep.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B5FE5A02BC31CB90061EE8C /* dailySleep.json */; };
 		8B5FE5A32BC31CED0061EE8C /* DailySleeps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5FE5A22BC31CED0061EE8C /* DailySleeps.swift */; };
+		8B5FE5A52BC521CD0061EE8C /* CaffeineConsumption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5FE5A42BC521CD0061EE8C /* CaffeineConsumption.swift */; };
+		8B5FE5A72BC5221D0061EE8C /* caffeineConsumption.json in Resources */ = {isa = PBXBuildFile; fileRef = 8B5FE5A62BC5221D0061EE8C /* caffeineConsumption.json */; };
+		8B5FE5A92BCA65090061EE8C /* InputSleepQualityPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5FE5A82BCA65090061EE8C /* InputSleepQualityPopUp.swift */; };
+		8B5FE5AC2BCA824E0061EE8C /* time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5FE5AB2BCA824E0061EE8C /* time.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +52,6 @@
 
 /* Begin PBXFileReference section */
 		2B9AF9EA2BBB55D1000DBD2D /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		2BA952F52BBBCE2F008AC955 /* InputCaffeineForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCaffeineForm.swift; sourceTree = "<group>"; };
 		2BA953392BBDC95F008AC955 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BA9533D2BBE0045008AC955 /* CatalogPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogPage.swift; sourceTree = "<group>"; };
 		2BA9533F2BBE10B2008AC955 /* SettingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingPage.swift; sourceTree = "<group>"; };
@@ -72,6 +74,10 @@
 		8B5FE59C2BC2B2020061EE8C /* Personalized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personalized.swift; sourceTree = "<group>"; };
 		8B5FE5A02BC31CB90061EE8C /* dailySleep.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dailySleep.json; sourceTree = "<group>"; };
 		8B5FE5A22BC31CED0061EE8C /* DailySleeps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailySleeps.swift; sourceTree = "<group>"; };
+		8B5FE5A42BC521CD0061EE8C /* CaffeineConsumption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeineConsumption.swift; sourceTree = "<group>"; };
+		8B5FE5A62BC5221D0061EE8C /* caffeineConsumption.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = caffeineConsumption.json; sourceTree = "<group>"; };
+		8B5FE5A82BCA65090061EE8C /* InputSleepQualityPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputSleepQualityPopUp.swift; sourceTree = "<group>"; };
+		8B5FE5AB2BCA824E0061EE8C /* time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = time.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +128,7 @@
 		2BB314DE2BBAFD62004E7C63 /* MC1-Koturu */ = {
 			isa = PBXGroup;
 			children = (
+				8B5FE5AA2BCA82340061EE8C /* Helpers */,
 				2BB314DF2BBAFD62004E7C63 /* MC1_KoturuApp.swift */,
 				8B5FE58F2BC2442E0061EE8C /* Resources */,
 				8B5FE58C2BC242520061EE8C /* Model */,
@@ -164,6 +171,7 @@
 				8B5FE5942BC2486C0061EE8C /* ModelData.swift */,
 				8B5FE59C2BC2B2020061EE8C /* Personalized.swift */,
 				8B5FE5A22BC31CED0061EE8C /* DailySleeps.swift */,
+				8B5FE5A42BC521CD0061EE8C /* CaffeineConsumption.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -176,8 +184,8 @@
 				2BA953412BBE1C05008AC955 /* SleepPage.swift */,
 				2BB3150D2BBAFEBA004E7C63 /* HomePage.swift */,
 				2BA9533F2BBE10B2008AC955 /* SettingPage.swift */,
-				2BA952F52BBBCE2F008AC955 /* InputCaffeineForm.swift */,
 				2B9AF9EA2BBB55D1000DBD2D /* Launch Screen.storyboard */,
+				8B5FE5A82BCA65090061EE8C /* InputSleepQualityPopUp.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -189,8 +197,17 @@
 				8B5FE5982BC25F5A0061EE8C /* defaultBaverage.json */,
 				8B5FE59A2BC2B19C0061EE8C /* personalizedSetting.json */,
 				8B5FE5A02BC31CB90061EE8C /* dailySleep.json */,
+				8B5FE5A62BC5221D0061EE8C /* caffeineConsumption.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		8B5FE5AA2BCA82340061EE8C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8B5FE5AB2BCA824E0061EE8C /* time.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +314,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B5FE5A72BC5221D0061EE8C /* caffeineConsumption.json in Resources */,
 				2B9AF9EB2BBB55D1000DBD2D /* Launch Screen.storyboard in Resources */,
 				8B5FE5A12BC31CB90061EE8C /* dailySleep.json in Resources */,
 				2BA9533A2BBDC95F008AC955 /* Assets.xcassets in Resources */,
@@ -331,9 +349,11 @@
 				2BB314E22BBAFD62004E7C63 /* ContentView.swift in Sources */,
 				2BB314E02BBAFD62004E7C63 /* MC1_KoturuApp.swift in Sources */,
 				8B5FE59D2BC2B2020061EE8C /* Personalized.swift in Sources */,
+				8B5FE5AC2BCA824E0061EE8C /* time.swift in Sources */,
 				2BB3150E2BBAFEBA004E7C63 /* HomePage.swift in Sources */,
 				8B5FE5952BC2486C0061EE8C /* ModelData.swift in Sources */,
-				2BA952F62BBBCE2F008AC955 /* InputCaffeineForm.swift in Sources */,
+				8B5FE5A92BCA65090061EE8C /* InputSleepQualityPopUp.swift in Sources */,
+				8B5FE5A52BC521CD0061EE8C /* CaffeineConsumption.swift in Sources */,
 				8B5FE5A32BC31CED0061EE8C /* DailySleeps.swift in Sources */,
 				2BA953422BBE1C05008AC955 /* SleepPage.swift in Sources */,
 				2BA9533E2BBE0045008AC955 /* CatalogPage.swift in Sources */,

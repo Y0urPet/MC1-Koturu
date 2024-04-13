@@ -38,20 +38,12 @@ struct CatalogPage: View {
                             HStack {
                                 ScrollView(.horizontal, showsIndicators: false){
                                     HStack {
-                                        NavigationLink(destination: InputCaffeineForm(data: $personal), label: {
-                                            VStack {
-                                                Image("addDrink")
-                                                    .resizable()
-                                                    .frame(width: 48, height: 48)
-                                                Text("Add").font(.system(size: 12)).foregroundStyle(.third)
-                                            }
-                                        })
-
                                         HStack {
                                             Group {
                                                 ForEach(customBaverage) {baverage in
                                                     VStack {
-                                                        baverage.image                                        .resizable()
+                                                        baverage.image                                    
+                                                            .resizable()
                                                             .frame(width: 48, height: 48)
                                                         Text(baverage.name)
                                                             .font(.system(size: 12))

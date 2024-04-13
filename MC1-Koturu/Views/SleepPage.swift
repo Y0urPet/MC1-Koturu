@@ -46,7 +46,7 @@ struct SleepPage: View {
                                             .font(.system(size: 12))
                                             .foregroundStyle(.prime)
                                             .fontWeight(.regular)
-                                        Text("Senang")
+                                        Text(updateFeel(point: calculateSleepPoint(data: dailySleep)))
                                             .font(.system(size: 16))
                                             .foregroundStyle(.prime)
                                             .fontWeight(.bold)
@@ -55,7 +55,7 @@ struct SleepPage: View {
                                 HStack(spacing:20) {
                                     Chart(dailySleep) {sleep in
                                         BarMark(
-                                            x: .value("Shape Type", sleep.day),
+                                            x: .value("Shape Type", getDay(createdAtString: sleep.createdAt)),
                                             y: .value("Total Count", sleep.point),
                                             width: .fixed(16)
                                         )
@@ -69,22 +69,22 @@ struct SleepPage: View {
                                     .chartYAxis(.hidden)
                                     
                                     switch calculateSleepPoint(data: dailySleep) {
-                                    case 1..<35:
+                                    case 1..<15:
                                         Image(systemName: "battery.25percent")
                                             .resizable()
                                             .frame(width: 60, height: 30)
                                             .foregroundColor(.cupcolor)
-                                    case 35:
+                                    case 15...21:
                                         Image(systemName: "battery.50percent")
                                             .resizable()
                                             .frame(width: 60, height: 30)
                                             .foregroundColor(.cupcolor)
-                                    case 42...56:
+                                    case 21...28:
                                         Image(systemName: "battery.75percent")
                                             .resizable()
                                             .frame(width: 60, height: 30)
                                             .foregroundColor(.cupcolor)
-                                    case 63...70:
+                                    case 28...35:
                                         Image(systemName: "battery.100percent")
                                             .resizable()
                                             .frame(width: 60, height: 30)
@@ -97,7 +97,11 @@ struct SleepPage: View {
                                     }
                                 }
                             }
-                            Image(systemName:"chevron.right").resizable().frame(width: 7.2, height: 12).foregroundStyle(.prime)
+                            NavigationLink(destination: InputSleepQualityPopUp(data: $dailySleep), label: {
+                                Image(systemName:"chevron.right")
+                                .resizable()
+                                .frame(width: 7.2, height: 12)
+                                .foregroundStyle(.prime)})
                         }.padding()
                             .background(.white)
                         .clipShape(RoundedRectangle(cornerRadius: 15))
@@ -150,6 +154,28 @@ struct SleepPage: View {
                 }
             }.background(.third)
         }.toolbarBackground(.second, for: .tabBar)
+    }
+    
+    func updateFeel(point: Int) -> String {
+        var feel: String
+        switch point {
+        case 1..<15:
+            feel = "Sangat Kurang Tidur"
+        case 15...21:
+            feel = "Kurang Tidur"
+        case 21...28:
+            feel = "Tidur Cukup"
+        case 28...35:
+            feel = "Tidur Sangat Cukup"
+        default:
+            feel = "Data Masih Kosong"
+        }
+        
+        return feel
+    }
+    
+    func refreshData() {
+        dailySleep = loadLocalFile(fileDailySleeps)
     }
 }
 

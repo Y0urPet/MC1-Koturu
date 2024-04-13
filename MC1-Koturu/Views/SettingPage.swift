@@ -10,8 +10,8 @@ import SwiftUI
 struct SettingPage: View {
     @Binding var personalData: Personalized    
     
-    let choice = ["100mg", "200mg", "300mg", "400mg", "500mg", "600mg", "700mg"]
-    let choiceEfek = ["4 jam", "5 jam", "6 jam", "7 jam", "8 jam"]
+    let choice = ["100", "200", "300", "400", "500", "600", "700"]
+    let choiceEfek = ["4", "5", "6", "7", "8"]
         
     @State var date = Date()
     @State private var selection: String = ""
@@ -21,8 +21,8 @@ struct SettingPage: View {
     // Init Data
     init(data: Binding<Personalized>) {
         _personalData = data
-        _selection = State(initialValue: personalData.maxDailyCaffeine)
-        _selectionEfek = State(initialValue: personalData.maxCaffeineEffect)
+        _selection = State(initialValue: String(personalData.maxDailyCaffeine))
+        _selectionEfek = State(initialValue: String(personalData.maxCaffeineEffect))
         _sleepTime = State(initialValue: personalData.sleepTime)
     }
 
@@ -61,7 +61,7 @@ struct SettingPage: View {
                             }
                             Picker("Masa Efek Kafein", selection: $selection) {
                                 ForEach(choice, id: \.self) {
-                                    Text($0)
+                                    Text($0 + "mg")
                                 }
                             }.tint(.prime)
                         }
@@ -78,7 +78,7 @@ struct SettingPage: View {
                             }
                             Picker("Masa Efek Kafein", selection: $selectionEfek) {
                                 ForEach(choiceEfek, id: \.self) {
-                                    Text($0)
+                                    Text($0 + " jam")
                                 }
                             }
                             .tint(.prime)
@@ -89,7 +89,7 @@ struct SettingPage: View {
                         
                         Button {
                             // Action If Any Updated Data
-                            if selection != personalData.maxDailyCaffeine || selectionEfek != personalData.maxCaffeineEffect || sleepTime != personalData.sleepTime {
+                            if selection != String(personalData.maxDailyCaffeine) || selectionEfek != String(personalData.maxCaffeineEffect) || sleepTime != personalData.sleepTime {
                                 updateData(maxDailyCaffeine: $selection, maxCaffeineEffect: $selectionEfek, sleepTime: $sleepTime, isSaving: true)
                             }
 
@@ -116,10 +116,13 @@ struct SettingPage: View {
     // Update Data on Resouces
     private func updateData(maxDailyCaffeine: Binding<String>, maxCaffeineEffect: Binding<String>, sleepTime: Binding<String>, isSaving: Bool) {
         if isSaving {
-            save(Personalized(
-                maxDailyCaffeine: maxDailyCaffeine.wrappedValue,
-                maxCaffeineEffect: maxCaffeineEffect.wrappedValue,
-                sleepTime: sleepTime.wrappedValue), toFile: "personalizedSetting.json")
+            if let maxDailyCaffeineInt = Int(maxDailyCaffeine.wrappedValue),
+               let maxCaffeineEffectInt = Int(maxCaffeineEffect.wrappedValue) {
+                            save(Personalized(
+                                maxDailyCaffeine: maxDailyCaffeineInt,
+                                maxCaffeineEffect: maxCaffeineEffectInt,
+                                sleepTime: sleepTime.wrappedValue), toFile: "personalizedSetting.json")
+            }
         }
     }
     

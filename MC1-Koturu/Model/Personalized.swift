@@ -8,7 +8,7 @@
 import Foundation
 
 struct Personalized: Hashable, Codable {
-    var maxDailyCaffeine: String
-    var maxCaffeineEffect: String
+    var maxDailyCaffeine: Int
+    var maxCaffeineEffect: Int
     var sleepTime: String
 }

@@ -13,17 +13,20 @@ struct ContentView: View {
     @State private var dailySleep: [DailySleep]
     @State private var defaultBaverages: [DefaultBaverage]
     @State private var customBaverages: [CustomBaverage]
+    @State private var caffeineConsumption: [CaffeineConsumption]
     
     let homePage: String = "Beranda"
     let sleepPage: String = "Tidur"
     let catalogPage: String = "Katalog"
-    let settingPage: String = "sPengaturan"
+    let settingPage: String = "Pengaturan"
+    let createDataPage: String = "Minum"
     
     enum Tabs {
         case home
         case sleep
         case catalog
         case settings
+        case createData
     }
     
     init() {
@@ -31,11 +34,12 @@ struct ContentView: View {
         _dailySleep = State(initialValue: dailySleepsTemplate)
         _defaultBaverages = State(initialValue: defaultBavearagesTemplate)
         _customBaverages = State(initialValue: customBavearagesTemplate)
+        _caffeineConsumption = State(initialValue: caffeineConsumptionTemplate)
     }
     
     var body: some View {
         TabView(selection: $selection) {
-            HomePage(data: $personal).tabItem {
+            HomePage(dataPersonal: $personal, dataConsumptions: $caffeineConsumption, defaultBaverage: $defaultBaverages, customBaverage: $customBaverages).tabItem {
                 Label(homePage, image: "navBean")
             }.tag(Tabs.home)
                 .onAppear(perform: {
@@ -81,6 +85,7 @@ struct ContentView: View {
             self.defaultBaverages = loadLocalFile(fileDefaultBaverages)
             self.customBaverages = loadLocalFile(fileCustomBaverages)
             self.dailySleep = loadLocalFile(fileDailySleeps)
+            self.caffeineConsumption = loadLocalFile(fileCaffeineConsumption)
         }
     }
 }

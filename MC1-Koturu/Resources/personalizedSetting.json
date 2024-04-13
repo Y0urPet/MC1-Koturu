@@ -1,5 +1,5 @@
 {
-    "maxDailyCaffeine": "400mg",
-    "maxCaffeineEffect": "7 jam",
+    "maxDailyCaffeine": 400,
+    "maxCaffeineEffect": 7,
     "sleepTime": "22:00"
 }

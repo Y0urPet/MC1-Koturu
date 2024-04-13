@@ -12,17 +12,14 @@ var fileCustomBaverages: String = "customBaverage.json"
 var fileDefaultBaverages: String = "defaultBaverage.json"
 var filePersonalized: String = "personalizedSetting.json"
 var fileDailySleeps: String = "dailySleep.json"
+var fileCaffeineConsumption: String = "caffeineConsumption.json"
 
 var customBavearagesTemplate: [CustomBaverage] = loadJsonTemplate(fileCustomBaverages)
 var defaultBavearagesTemplate: [DefaultBaverage] = loadJsonTemplate(fileDefaultBaverages)
 var personalizedTemplate: Personalized = loadJsonTemplate(filePersonalized)
 var dailySleepsTemplate: [DailySleep] = loadJsonTemplate(fileDailySleeps)
+var caffeineConsumptionTemplate: [CaffeineConsumption] = loadJsonTemplate(fileCaffeineConsumption)
 
-
-//var localPersonal: Personalized = loadLocalFile(filePersonalized)
-//var localDefaultBaverages: [DefaultBaverage] = loadLocalFile(fileDefaultBaverages)
-//var localCustomBaverages: [CustomBaverage] = loadLocalFile(fileCustomBaverages)
-//var localDailySleeps: [DailySleep] = loadLocalFile(fileDailySleeps)
 
 func getPersonalData() -> Binding<Personalized> {
     var data: Personalized = loadLocalFile(filePersonalized)
@@ -62,6 +59,18 @@ func getDefaultBaveragesData() -> Binding<[DefaultBaverage]> {
 
 func getCustomBaveragesData() -> Binding<[CustomBaverage]> {
     var data: [CustomBaverage] = loadLocalFile(fileCustomBaverages)
+    return Binding(
+        get: {
+            return data
+        },
+        set: { newValue in
+            data = newValue
+        }
+    )
+}
+
+func getCaffeinConsumptionData() -> Binding<[CaffeineConsumption]> {
+    var data: [CaffeineConsumption] = loadLocalFile(fileCaffeineConsumption)
     return Binding(
         get: {
             return data

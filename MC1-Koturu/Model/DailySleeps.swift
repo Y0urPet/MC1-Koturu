@@ -9,6 +9,6 @@ import Foundation
 
 struct DailySleep: Hashable, Codable, Identifiable {
     var id: Int
-    var day: String
+    var createdAt: String
     var point: Int
 }

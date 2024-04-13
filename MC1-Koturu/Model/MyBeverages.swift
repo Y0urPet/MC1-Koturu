@@ -28,6 +28,7 @@ struct Varian: Hashable, Codable, Identifiable {
 struct CustomBaverage: Hashable, Codable, Identifiable {
     var id: Int
     var name: String
+    var caffeine: Int
     
     private var imageName: String
     var image: Image {
